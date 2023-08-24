@@ -77,8 +77,7 @@ def prediction(gender, ethinicity, parental_education, lunch, test_preparation, 
   data = input_preprocessing(data)
 
   #predict data
-  #model = load_model('Model/best_model')
-  model = joblib.load('Model/model.joblib')
+  model = load_model('Model/fix_best_model')
   prediction = predict_model(model, data)
   result = prediction.loc[0,'prediction_label']
   prediction_score = prediction.loc[0,'prediction_score']

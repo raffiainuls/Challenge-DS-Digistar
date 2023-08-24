@@ -81,7 +81,7 @@ students_scores
 
 students_scores.hist(bins= 50 , figsize = (7,7))
 
-
+'''
 plt.figure(figsize=(12, 8))
 sns.heatmap(students_scores.assign(gender = students_scores.gender.astype('category').cat.codes,
                            race_ethnicity = students_scores['race/ethnicity'].astype('category').cat.codes,
@@ -89,7 +89,7 @@ sns.heatmap(students_scores.assign(gender = students_scores.gender.astype('categ
                            lunch  = students_scores.lunch .astype('category').cat.codes,
                            test_preparation_course = students_scores['test preparation course'].astype('category').cat.codes).corr(),
             annot = True, cmap ='RdYlGn', vmin = -1, vmax = 1, linewidths = 0.5)
-
+'''
 
 def boxplot(data, column):
   plt.figure(figsize = (10,7))
