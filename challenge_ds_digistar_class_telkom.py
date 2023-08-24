@@ -189,7 +189,7 @@ def distribution_score_prepare_test(score, data = students_scores):
   
   return fig
 
-''' 
+
 """## Machine Learning"""
 
 data = students_scores.dropna()
@@ -212,7 +212,7 @@ for col in numerical_columns:
   data[col] = scaler.fit_transform(data[[col]])
 
 data
-
+'''
 from yellowbrick.cluster import KElbowVisualizer
 
 model = KMeans(random_state=42)

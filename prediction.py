@@ -3,7 +3,9 @@ from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 import numpy as np
 import pandas as pd
 from pycaret.classification import *
+from challenge_ds_digistar_class_telkom import data
 
+data_model = data.copy()
 
 def input_preprocessing(data):
    gender = {'Male' : 1, 'Female' : 0}
@@ -60,7 +62,7 @@ def input_preprocessing(data):
 
     return data
    
-def prediction(gender, ethinicity, parental_education, lunch, test_preparation, math_score,writing_score, reading_score):
+def prediction(gender, ethinicity, parental_education, lunch, test_preparation, math_score,writing_score, reading_score, data_model = data_model):
   data = pd.DataFrame({
       'gender'                      : [gender],
       'race/ethnicity'              : [ethinicity],
@@ -76,12 +78,12 @@ def prediction(gender, ethinicity, parental_education, lunch, test_preparation, 
 
   data = input_preprocessing(data)
 
+  data = pd.concat([data_model, data], ignore_index=True)
+
   #predict data
-  model = load_model('Model/fix_best_model')
+  model = load_model('Model/mlp2')
   prediction = predict_model(model, data)
-  result = prediction.loc[0,'prediction_label']
-  prediction_score = prediction.loc[0,'prediction_score']
-
-
+  result = prediction['prediction_label'].iloc[-1]
+  prediction_score = prediction['prediction_score'].iloc[-1]
   return result, prediction_score
   
