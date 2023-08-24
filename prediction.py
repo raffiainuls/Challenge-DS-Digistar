@@ -1,9 +1,8 @@
-import pickle
+
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 import numpy as np
 import pandas as pd
 from pycaret.classification import *
-import joblib
 
 
 def input_preprocessing(data):
@@ -78,7 +77,7 @@ def prediction(gender, ethinicity, parental_education, lunch, test_preparation, 
   data = input_preprocessing(data)
 
   #predict data
-  model = load_model('Model/best_model')
+  #model = load_model('Model/best_model')
   model = joblib.load('Model/model.joblib')
   prediction = predict_model(model, data)
   result = prediction.loc[0,'prediction_label']

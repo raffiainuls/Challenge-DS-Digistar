@@ -1448,3 +1448,13 @@ https://scikit-learn.org/stable/model_persistence.html#security-maintainability-
 2023-08-24 13:30:21,825:INFO:Initializing predict_model()
 2023-08-24 13:30:21,825:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E8A1B05C30>, estimator=QuadraticDiscriminantAnalysis(), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E8A4BACDC0>)
 2023-08-24 13:30:21,825:INFO:Checking exceptions
+2023-08-24 15:53:03,733:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 15:53:06,068:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
