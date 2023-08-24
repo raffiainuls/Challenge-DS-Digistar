@@ -1,0 +1,1450 @@
+2023-08-24 08:57:44,959:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 08:57:44,959:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 08:57:44,960:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 08:57:44,960:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 08:57:46,806:INFO:PyCaret ClassificationExperiment
+2023-08-24 08:57:46,807:INFO:Logging name: clf-default-name
+2023-08-24 08:57:46,809:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-08-24 08:57:46,810:INFO:version 3.0.4
+2023-08-24 08:57:46,810:INFO:Initializing setup()
+2023-08-24 08:57:46,810:INFO:self.USI: 955b
+2023-08-24 08:57:46,810:INFO:self._variable_keys: {'fold_generator', '_available_plots', 'seed', 'logging_param', 'n_jobs_param', 'pipeline', 'X_test', 'y_test', 'X', 'fix_imbalance', 'y_train', 'exp_id', 'y', 'data', 'idx', 'exp_name_log', 'gpu_param', 'X_train', 'fold_groups_param', '_ml_usecase', 'gpu_n_jobs_param', 'is_multiclass', 'target_param', 'memory', 'USI', 'html_param', 'log_plots_param', 'fold_shuffle_param'}
+2023-08-24 08:57:46,810:INFO:Checking environment
+2023-08-24 08:57:46,811:INFO:python_version: 3.10.9
+2023-08-24 08:57:46,811:INFO:python_build: ('main', 'Mar  1 2023 18:18:15')
+2023-08-24 08:57:46,811:INFO:machine: AMD64
+2023-08-24 08:57:46,836:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-24 08:57:46,836:INFO:Memory: svmem(total=16979369984, available=6829600768, percent=59.8, used=10149769216, free=6829600768)
+2023-08-24 08:57:46,836:INFO:Physical Core: 4
+2023-08-24 08:57:46,836:INFO:Logical Core: 8
+2023-08-24 08:57:46,837:INFO:Checking libraries
+2023-08-24 08:57:46,837:INFO:System:
+2023-08-24 08:57:46,837:INFO:    python: 3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]
+2023-08-24 08:57:46,837:INFO:executable: C:\Users\Raffi\anaconda3\python.exe
+2023-08-24 08:57:46,837:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-24 08:57:46,838:INFO:PyCaret required dependencies:
+2023-08-24 08:57:49,654:INFO:                 pip: 22.3.1
+2023-08-24 08:57:49,654:INFO:          setuptools: 65.6.3
+2023-08-24 08:57:49,655:INFO:             pycaret: 3.0.4
+2023-08-24 08:57:49,655:INFO:             IPython: 8.10.0
+2023-08-24 08:57:49,655:INFO:          ipywidgets: 7.6.5
+2023-08-24 08:57:49,655:INFO:                tqdm: 4.64.1
+2023-08-24 08:57:49,655:INFO:               numpy: 1.23.5
+2023-08-24 08:57:49,656:INFO:              pandas: 1.5.3
+2023-08-24 08:57:49,656:INFO:              jinja2: 3.1.2
+2023-08-24 08:57:49,656:INFO:               scipy: 1.10.0
+2023-08-24 08:57:49,656:INFO:              joblib: 1.3.2
+2023-08-24 08:57:49,656:INFO:             sklearn: 1.2.1
+2023-08-24 08:57:49,657:INFO:                pyod: 1.1.0
+2023-08-24 08:57:49,657:INFO:            imblearn: 0.10.1
+2023-08-24 08:57:49,657:INFO:   category_encoders: 2.6.2
+2023-08-24 08:57:49,657:INFO:            lightgbm: 4.0.0
+2023-08-24 08:57:49,658:INFO:               numba: 0.56.4
+2023-08-24 08:57:49,658:INFO:            requests: 2.28.1
+2023-08-24 08:57:49,658:INFO:          matplotlib: 3.7.0
+2023-08-24 08:57:49,658:INFO:          scikitplot: 0.3.7
+2023-08-24 08:57:49,658:INFO:         yellowbrick: 1.5
+2023-08-24 08:57:49,659:INFO:              plotly: 5.9.0
+2023-08-24 08:57:49,659:INFO:    plotly-resampler: Not installed
+2023-08-24 08:57:49,659:INFO:             kaleido: 0.2.1
+2023-08-24 08:57:49,660:INFO:           schemdraw: 0.15
+2023-08-24 08:57:49,660:INFO:         statsmodels: 0.13.5
+2023-08-24 08:57:49,660:INFO:              sktime: 0.22.0
+2023-08-24 08:57:49,660:INFO:               tbats: 1.1.3
+2023-08-24 08:57:49,660:INFO:            pmdarima: 2.0.3
+2023-08-24 08:57:49,661:INFO:              psutil: 5.9.0
+2023-08-24 08:57:49,661:INFO:          markupsafe: 2.1.1
+2023-08-24 08:57:49,661:INFO:             pickle5: Not installed
+2023-08-24 08:57:49,661:INFO:         cloudpickle: 2.0.0
+2023-08-24 08:57:49,661:INFO:         deprecation: 2.1.0
+2023-08-24 08:57:49,662:INFO:              xxhash: 3.3.0
+2023-08-24 08:57:49,662:INFO:           wurlitzer: Not installed
+2023-08-24 08:57:49,662:INFO:PyCaret optional dependencies:
+2023-08-24 08:57:49,720:INFO:                shap: Not installed
+2023-08-24 08:57:49,720:INFO:           interpret: Not installed
+2023-08-24 08:57:49,720:INFO:                umap: Not installed
+2023-08-24 08:57:49,721:INFO:    pandas_profiling: Not installed
+2023-08-24 08:57:49,721:INFO:  explainerdashboard: Not installed
+2023-08-24 08:57:49,721:INFO:             autoviz: Not installed
+2023-08-24 08:57:49,722:INFO:           fairlearn: Not installed
+2023-08-24 08:57:49,722:INFO:          deepchecks: Not installed
+2023-08-24 08:57:49,722:INFO:             xgboost: Not installed
+2023-08-24 08:57:49,722:INFO:            catboost: Not installed
+2023-08-24 08:57:49,722:INFO:              kmodes: Not installed
+2023-08-24 08:57:49,722:INFO:             mlxtend: Not installed
+2023-08-24 08:57:49,723:INFO:       statsforecast: Not installed
+2023-08-24 08:57:49,723:INFO:        tune_sklearn: Not installed
+2023-08-24 08:57:49,723:INFO:                 ray: Not installed
+2023-08-24 08:57:49,723:INFO:            hyperopt: Not installed
+2023-08-24 08:57:49,723:INFO:              optuna: Not installed
+2023-08-24 08:57:49,723:INFO:               skopt: Not installed
+2023-08-24 08:57:49,724:INFO:              mlflow: Not installed
+2023-08-24 08:57:49,724:INFO:              gradio: Not installed
+2023-08-24 08:57:49,724:INFO:             fastapi: Not installed
+2023-08-24 08:57:49,724:INFO:             uvicorn: Not installed
+2023-08-24 08:57:49,724:INFO:              m2cgen: Not installed
+2023-08-24 08:57:49,725:INFO:           evidently: Not installed
+2023-08-24 08:57:49,725:INFO:               fugue: Not installed
+2023-08-24 08:57:49,725:INFO:           streamlit: 1.22.0
+2023-08-24 08:57:49,725:INFO:             prophet: Not installed
+2023-08-24 08:57:49,725:INFO:None
+2023-08-24 08:57:49,725:INFO:Set up data.
+2023-08-24 08:57:49,746:INFO:Set up train/test split.
+2023-08-24 08:57:49,761:INFO:Set up index.
+2023-08-24 08:57:49,763:INFO:Set up folding strategy.
+2023-08-24 08:57:49,763:INFO:Assigning column types.
+2023-08-24 08:57:49,775:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-08-24 08:57:49,965:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-08-24 08:57:49,979:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-08-24 08:57:50,123:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:50,125:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:50,314:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-08-24 08:57:50,317:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-08-24 08:57:50,438:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:50,439:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:50,440:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-08-24 08:57:50,629:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-08-24 08:57:50,749:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:50,750:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:50,940:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-08-24 08:57:51,056:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:51,057:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:51,058:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-08-24 08:57:51,379:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:51,381:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:51,700:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:51,701:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:51,714:INFO:Preparing preprocessing pipeline...
+2023-08-24 08:57:51,717:INFO:Set up simple imputation.
+2023-08-24 08:57:51,717:INFO:Set up imbalanced handling.
+2023-08-24 08:57:51,717:INFO:Set up column transformation.
+2023-08-24 08:57:51,718:INFO:Set up feature normalization.
+2023-08-24 08:57:51,718:INFO:Set up PCA.
+2023-08-24 08:57:51,720:INFO:Set up column name cleaning.
+2023-08-24 08:57:53,671:INFO:Finished creating preprocessing pipeline.
+2023-08-24 08:57:53,724:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Raffi\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['gender', 'race/ethnicity',
+                                             'parental level of education',
+                                             'lunch', 'test preparation course',
+                                             'math score', 'reading score',
+                                             'writing score', 'total score'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_v...
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=PCA(copy=True,
+                                                    iterated_power='auto',
+                                                    n_components=0.95,
+                                                    n_oversamples=10,
+                                                    power_iteration_normalizer='auto',
+                                                    random_state=None,
+                                                    svd_solver='auto', tol=0.0,
+                                                    whiten=False))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2023-08-24 08:57:53,725:INFO:Creating final display dataframe.
+2023-08-24 08:57:54,818:INFO:Setup _display_container:                     Description             Value
+0                    Session id              4852
+1                        Target           Cluster
+2                   Target type        Multiclass
+3           Original data shape        (1000, 10)
+4        Transformed data shape         (1140, 7)
+5   Transformed train set shape          (940, 7)
+6    Transformed test set shape          (200, 7)
+7              Numeric features                 9
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12                Fix imbalance              True
+13         Fix imbalance method             smote
+14               Transformation              True
+15        Transformation method       yeo-johnson
+16                    Normalize              True
+17             Normalize method            zscore
+18                          PCA              True
+19                   PCA method            linear
+20               PCA components              0.95
+21               Fold Generator   StratifiedKFold
+22                  Fold Number                10
+23                     CPU Jobs                -1
+24                      Use GPU             False
+25               Log Experiment             False
+26              Experiment Name  clf-default-name
+27                          USI              955b
+2023-08-24 08:57:55,163:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:55,165:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:55,475:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:55,476:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-24 08:57:55,478:INFO:setup() successfully completed in 8.68s...............
+2023-08-24 08:57:55,478:INFO:Initializing compare_models()
+2023-08-24 08:57:55,478:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, include=None, fold=5, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, 'include': None, 'exclude': None, 'fold': 5, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-08-24 08:57:55,478:INFO:Checking exceptions
+2023-08-24 08:57:55,495:INFO:Preparing display monitor
+2023-08-24 08:57:55,512:INFO:Initializing Logistic Regression
+2023-08-24 08:57:55,513:INFO:Total runtime is 1.6733010609944662e-05 minutes
+2023-08-24 08:57:55,513:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:57:55,514:INFO:Initializing create_model()
+2023-08-24 08:57:55,514:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=lr, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:57:55,514:INFO:Checking exceptions
+2023-08-24 08:57:55,515:INFO:Importing libraries
+2023-08-24 08:57:55,515:INFO:Copying training dataset
+2023-08-24 08:57:55,527:INFO:Defining folds
+2023-08-24 08:57:55,527:INFO:Declaring metric variables
+2023-08-24 08:57:55,528:INFO:Importing untrained model
+2023-08-24 08:57:55,529:INFO:Logistic Regression Imported successfully
+2023-08-24 08:57:55,530:INFO:Starting cross validation
+2023-08-24 08:57:55,536:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:09,149:INFO:Calculating mean and std
+2023-08-24 08:58:09,152:INFO:Creating metrics dataframe
+2023-08-24 08:58:09,182:INFO:Uploading results into container
+2023-08-24 08:58:09,183:INFO:Uploading model into container now
+2023-08-24 08:58:09,184:INFO:_master_model_container: 1
+2023-08-24 08:58:09,185:INFO:_display_container: 2
+2023-08-24 08:58:09,186:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=4852, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-08-24 08:58:09,187:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:09,377:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:09,377:INFO:Creating metrics dataframe
+2023-08-24 08:58:09,383:INFO:Initializing K Neighbors Classifier
+2023-08-24 08:58:09,383:INFO:Total runtime is 0.23117462396621705 minutes
+2023-08-24 08:58:09,383:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:09,384:INFO:Initializing create_model()
+2023-08-24 08:58:09,384:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=knn, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:09,384:INFO:Checking exceptions
+2023-08-24 08:58:09,384:INFO:Importing libraries
+2023-08-24 08:58:09,384:INFO:Copying training dataset
+2023-08-24 08:58:09,389:INFO:Defining folds
+2023-08-24 08:58:09,389:INFO:Declaring metric variables
+2023-08-24 08:58:09,390:INFO:Importing untrained model
+2023-08-24 08:58:09,390:INFO:K Neighbors Classifier Imported successfully
+2023-08-24 08:58:09,391:INFO:Starting cross validation
+2023-08-24 08:58:09,393:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:25,653:INFO:Calculating mean and std
+2023-08-24 08:58:25,657:INFO:Creating metrics dataframe
+2023-08-24 08:58:25,701:INFO:Uploading results into container
+2023-08-24 08:58:25,703:INFO:Uploading model into container now
+2023-08-24 08:58:25,704:INFO:_master_model_container: 2
+2023-08-24 08:58:25,705:INFO:_display_container: 2
+2023-08-24 08:58:25,706:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2023-08-24 08:58:25,706:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:25,941:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:25,941:INFO:Creating metrics dataframe
+2023-08-24 08:58:25,960:INFO:Initializing Naive Bayes
+2023-08-24 08:58:25,961:INFO:Total runtime is 0.5074532866477967 minutes
+2023-08-24 08:58:25,961:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:25,962:INFO:Initializing create_model()
+2023-08-24 08:58:25,962:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=nb, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:25,963:INFO:Checking exceptions
+2023-08-24 08:58:25,963:INFO:Importing libraries
+2023-08-24 08:58:25,963:INFO:Copying training dataset
+2023-08-24 08:58:25,976:INFO:Defining folds
+2023-08-24 08:58:25,976:INFO:Declaring metric variables
+2023-08-24 08:58:25,977:INFO:Importing untrained model
+2023-08-24 08:58:25,978:INFO:Naive Bayes Imported successfully
+2023-08-24 08:58:25,978:INFO:Starting cross validation
+2023-08-24 08:58:25,983:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:27,317:INFO:Calculating mean and std
+2023-08-24 08:58:27,320:INFO:Creating metrics dataframe
+2023-08-24 08:58:27,371:INFO:Uploading results into container
+2023-08-24 08:58:27,372:INFO:Uploading model into container now
+2023-08-24 08:58:27,373:INFO:_master_model_container: 3
+2023-08-24 08:58:27,373:INFO:_display_container: 2
+2023-08-24 08:58:27,374:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2023-08-24 08:58:27,374:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:27,584:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:27,584:INFO:Creating metrics dataframe
+2023-08-24 08:58:27,601:INFO:Initializing Decision Tree Classifier
+2023-08-24 08:58:27,602:INFO:Total runtime is 0.5348281820615133 minutes
+2023-08-24 08:58:27,602:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:27,603:INFO:Initializing create_model()
+2023-08-24 08:58:27,603:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=dt, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:27,604:INFO:Checking exceptions
+2023-08-24 08:58:27,604:INFO:Importing libraries
+2023-08-24 08:58:27,604:INFO:Copying training dataset
+2023-08-24 08:58:27,615:INFO:Defining folds
+2023-08-24 08:58:27,615:INFO:Declaring metric variables
+2023-08-24 08:58:27,616:INFO:Importing untrained model
+2023-08-24 08:58:27,617:INFO:Decision Tree Classifier Imported successfully
+2023-08-24 08:58:27,618:INFO:Starting cross validation
+2023-08-24 08:58:27,623:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:28,780:INFO:Calculating mean and std
+2023-08-24 08:58:28,781:INFO:Creating metrics dataframe
+2023-08-24 08:58:28,812:INFO:Uploading results into container
+2023-08-24 08:58:28,813:INFO:Uploading model into container now
+2023-08-24 08:58:28,814:INFO:_master_model_container: 4
+2023-08-24 08:58:28,814:INFO:_display_container: 2
+2023-08-24 08:58:28,814:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=4852, splitter='best')
+2023-08-24 08:58:28,814:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:29,000:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:29,001:INFO:Creating metrics dataframe
+2023-08-24 08:58:29,021:INFO:Initializing SVM - Linear Kernel
+2023-08-24 08:58:29,022:INFO:Total runtime is 0.5585009614626567 minutes
+2023-08-24 08:58:29,023:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:29,023:INFO:Initializing create_model()
+2023-08-24 08:58:29,024:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=svm, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:29,024:INFO:Checking exceptions
+2023-08-24 08:58:29,024:INFO:Importing libraries
+2023-08-24 08:58:29,025:INFO:Copying training dataset
+2023-08-24 08:58:29,037:INFO:Defining folds
+2023-08-24 08:58:29,038:INFO:Declaring metric variables
+2023-08-24 08:58:29,038:INFO:Importing untrained model
+2023-08-24 08:58:29,040:INFO:SVM - Linear Kernel Imported successfully
+2023-08-24 08:58:29,041:INFO:Starting cross validation
+2023-08-24 08:58:29,046:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:29,891:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1236, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-24 08:58:29,891:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1236, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-24 08:58:29,891:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1236, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-24 08:58:29,927:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1236, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-24 08:58:29,940:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1236, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-24 08:58:30,121:INFO:Calculating mean and std
+2023-08-24 08:58:30,123:INFO:Creating metrics dataframe
+2023-08-24 08:58:30,194:INFO:Uploading results into container
+2023-08-24 08:58:30,195:INFO:Uploading model into container now
+2023-08-24 08:58:30,196:INFO:_master_model_container: 5
+2023-08-24 08:58:30,196:INFO:_display_container: 2
+2023-08-24 08:58:30,198:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=4852, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2023-08-24 08:58:30,198:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:30,391:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:30,391:INFO:Creating metrics dataframe
+2023-08-24 08:58:30,415:INFO:Initializing Ridge Classifier
+2023-08-24 08:58:30,416:INFO:Total runtime is 0.5817241946856181 minutes
+2023-08-24 08:58:30,416:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:30,417:INFO:Initializing create_model()
+2023-08-24 08:58:30,417:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=ridge, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:30,418:INFO:Checking exceptions
+2023-08-24 08:58:30,418:INFO:Importing libraries
+2023-08-24 08:58:30,418:INFO:Copying training dataset
+2023-08-24 08:58:30,433:INFO:Defining folds
+2023-08-24 08:58:30,433:INFO:Declaring metric variables
+2023-08-24 08:58:30,434:INFO:Importing untrained model
+2023-08-24 08:58:30,435:INFO:Ridge Classifier Imported successfully
+2023-08-24 08:58:30,436:INFO:Starting cross validation
+2023-08-24 08:58:30,442:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:31,314:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-24 08:58:31,315:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-24 08:58:31,317:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-24 08:58:31,324:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-24 08:58:31,326:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-24 08:58:31,619:INFO:Calculating mean and std
+2023-08-24 08:58:31,622:INFO:Creating metrics dataframe
+2023-08-24 08:58:31,703:INFO:Uploading results into container
+2023-08-24 08:58:31,705:INFO:Uploading model into container now
+2023-08-24 08:58:31,706:INFO:_master_model_container: 6
+2023-08-24 08:58:31,707:INFO:_display_container: 2
+2023-08-24 08:58:31,708:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=4852, solver='auto',
+                tol=0.0001)
+2023-08-24 08:58:31,708:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:31,923:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:31,924:INFO:Creating metrics dataframe
+2023-08-24 08:58:31,941:INFO:Initializing Random Forest Classifier
+2023-08-24 08:58:31,941:INFO:Total runtime is 0.6071468671162923 minutes
+2023-08-24 08:58:31,942:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:31,943:INFO:Initializing create_model()
+2023-08-24 08:58:31,943:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=rf, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:31,943:INFO:Checking exceptions
+2023-08-24 08:58:31,943:INFO:Importing libraries
+2023-08-24 08:58:31,944:INFO:Copying training dataset
+2023-08-24 08:58:31,955:INFO:Defining folds
+2023-08-24 08:58:31,955:INFO:Declaring metric variables
+2023-08-24 08:58:31,956:INFO:Importing untrained model
+2023-08-24 08:58:31,957:INFO:Random Forest Classifier Imported successfully
+2023-08-24 08:58:31,958:INFO:Starting cross validation
+2023-08-24 08:58:31,963:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:34,353:INFO:Calculating mean and std
+2023-08-24 08:58:34,354:INFO:Creating metrics dataframe
+2023-08-24 08:58:34,398:INFO:Uploading results into container
+2023-08-24 08:58:34,399:INFO:Uploading model into container now
+2023-08-24 08:58:34,400:INFO:_master_model_container: 7
+2023-08-24 08:58:34,400:INFO:_display_container: 2
+2023-08-24 08:58:34,400:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=4852, verbose=0, warm_start=False)
+2023-08-24 08:58:34,400:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:34,554:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:34,554:INFO:Creating metrics dataframe
+2023-08-24 08:58:34,573:INFO:Initializing Quadratic Discriminant Analysis
+2023-08-24 08:58:34,573:INFO:Total runtime is 0.6510087450345357 minutes
+2023-08-24 08:58:34,574:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:34,574:INFO:Initializing create_model()
+2023-08-24 08:58:34,574:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=qda, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:34,575:INFO:Checking exceptions
+2023-08-24 08:58:34,575:INFO:Importing libraries
+2023-08-24 08:58:34,575:INFO:Copying training dataset
+2023-08-24 08:58:34,587:INFO:Defining folds
+2023-08-24 08:58:34,587:INFO:Declaring metric variables
+2023-08-24 08:58:34,588:INFO:Importing untrained model
+2023-08-24 08:58:34,589:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-08-24 08:58:34,590:INFO:Starting cross validation
+2023-08-24 08:58:34,595:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:36,369:INFO:Calculating mean and std
+2023-08-24 08:58:36,372:INFO:Creating metrics dataframe
+2023-08-24 08:58:36,516:INFO:Uploading results into container
+2023-08-24 08:58:36,518:INFO:Uploading model into container now
+2023-08-24 08:58:36,519:INFO:_master_model_container: 8
+2023-08-24 08:58:36,519:INFO:_display_container: 2
+2023-08-24 08:58:36,520:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-08-24 08:58:36,520:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:36,741:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:36,742:INFO:Creating metrics dataframe
+2023-08-24 08:58:36,760:INFO:Initializing Ada Boost Classifier
+2023-08-24 08:58:36,760:INFO:Total runtime is 0.6874613642692565 minutes
+2023-08-24 08:58:36,761:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:36,762:INFO:Initializing create_model()
+2023-08-24 08:58:36,762:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=ada, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:36,762:INFO:Checking exceptions
+2023-08-24 08:58:36,762:INFO:Importing libraries
+2023-08-24 08:58:36,762:INFO:Copying training dataset
+2023-08-24 08:58:36,775:INFO:Defining folds
+2023-08-24 08:58:36,776:INFO:Declaring metric variables
+2023-08-24 08:58:36,777:INFO:Importing untrained model
+2023-08-24 08:58:36,778:INFO:Ada Boost Classifier Imported successfully
+2023-08-24 08:58:36,779:INFO:Starting cross validation
+2023-08-24 08:58:36,783:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:38,525:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-24 08:58:38,574:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-24 08:58:38,794:INFO:Calculating mean and std
+2023-08-24 08:58:38,795:INFO:Creating metrics dataframe
+2023-08-24 08:58:38,867:INFO:Uploading results into container
+2023-08-24 08:58:38,868:INFO:Uploading model into container now
+2023-08-24 08:58:38,869:INFO:_master_model_container: 9
+2023-08-24 08:58:38,869:INFO:_display_container: 2
+2023-08-24 08:58:38,869:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator='deprecated',
+                   estimator=None, learning_rate=1.0, n_estimators=50,
+                   random_state=4852)
+2023-08-24 08:58:38,869:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:39,080:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:39,081:INFO:Creating metrics dataframe
+2023-08-24 08:58:39,099:INFO:Initializing Gradient Boosting Classifier
+2023-08-24 08:58:39,100:INFO:Total runtime is 0.7264608144760131 minutes
+2023-08-24 08:58:39,101:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:39,102:INFO:Initializing create_model()
+2023-08-24 08:58:39,102:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=gbc, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:39,102:INFO:Checking exceptions
+2023-08-24 08:58:39,103:INFO:Importing libraries
+2023-08-24 08:58:39,103:INFO:Copying training dataset
+2023-08-24 08:58:39,115:INFO:Defining folds
+2023-08-24 08:58:39,115:INFO:Declaring metric variables
+2023-08-24 08:58:39,116:INFO:Importing untrained model
+2023-08-24 08:58:39,117:INFO:Gradient Boosting Classifier Imported successfully
+2023-08-24 08:58:39,118:INFO:Starting cross validation
+2023-08-24 08:58:39,123:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:43,030:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.63s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2023-08-24 08:58:43,151:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.68s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2023-08-24 08:58:43,310:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.66s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2023-08-24 08:58:43,391:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.74s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2023-08-24 08:58:44,882:INFO:Calculating mean and std
+2023-08-24 08:58:44,883:INFO:Creating metrics dataframe
+2023-08-24 08:58:44,959:INFO:Uploading results into container
+2023-08-24 08:58:44,960:INFO:Uploading model into container now
+2023-08-24 08:58:44,961:INFO:_master_model_container: 10
+2023-08-24 08:58:44,961:INFO:_display_container: 2
+2023-08-24 08:58:44,962:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=4852, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-08-24 08:58:44,962:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:45,098:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:45,098:INFO:Creating metrics dataframe
+2023-08-24 08:58:45,105:INFO:Initializing Linear Discriminant Analysis
+2023-08-24 08:58:45,105:INFO:Total runtime is 0.8265408674875894 minutes
+2023-08-24 08:58:45,105:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:45,105:INFO:Initializing create_model()
+2023-08-24 08:58:45,106:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=lda, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:45,106:INFO:Checking exceptions
+2023-08-24 08:58:45,106:INFO:Importing libraries
+2023-08-24 08:58:45,106:INFO:Copying training dataset
+2023-08-24 08:58:45,110:INFO:Defining folds
+2023-08-24 08:58:45,110:INFO:Declaring metric variables
+2023-08-24 08:58:45,111:INFO:Importing untrained model
+2023-08-24 08:58:45,111:INFO:Linear Discriminant Analysis Imported successfully
+2023-08-24 08:58:45,111:INFO:Starting cross validation
+2023-08-24 08:58:45,113:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:46,049:INFO:Calculating mean and std
+2023-08-24 08:58:46,051:INFO:Creating metrics dataframe
+2023-08-24 08:58:46,186:INFO:Uploading results into container
+2023-08-24 08:58:46,188:INFO:Uploading model into container now
+2023-08-24 08:58:46,189:INFO:_master_model_container: 11
+2023-08-24 08:58:46,190:INFO:_display_container: 2
+2023-08-24 08:58:46,191:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2023-08-24 08:58:46,191:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:46,399:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:46,399:INFO:Creating metrics dataframe
+2023-08-24 08:58:46,417:INFO:Initializing Extra Trees Classifier
+2023-08-24 08:58:46,417:INFO:Total runtime is 0.8484089096387226 minutes
+2023-08-24 08:58:46,418:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:46,419:INFO:Initializing create_model()
+2023-08-24 08:58:46,419:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=et, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:46,419:INFO:Checking exceptions
+2023-08-24 08:58:46,419:INFO:Importing libraries
+2023-08-24 08:58:46,419:INFO:Copying training dataset
+2023-08-24 08:58:46,432:INFO:Defining folds
+2023-08-24 08:58:46,432:INFO:Declaring metric variables
+2023-08-24 08:58:46,432:INFO:Importing untrained model
+2023-08-24 08:58:46,434:INFO:Extra Trees Classifier Imported successfully
+2023-08-24 08:58:46,434:INFO:Starting cross validation
+2023-08-24 08:58:46,440:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:49,286:INFO:Calculating mean and std
+2023-08-24 08:58:49,287:INFO:Creating metrics dataframe
+2023-08-24 08:58:49,480:INFO:Uploading results into container
+2023-08-24 08:58:49,482:INFO:Uploading model into container now
+2023-08-24 08:58:49,484:INFO:_master_model_container: 12
+2023-08-24 08:58:49,484:INFO:_display_container: 2
+2023-08-24 08:58:49,485:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=4852, verbose=0, warm_start=False)
+2023-08-24 08:58:49,486:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:49,715:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:49,715:INFO:Creating metrics dataframe
+2023-08-24 08:58:49,733:INFO:Initializing Light Gradient Boosting Machine
+2023-08-24 08:58:49,733:INFO:Total runtime is 0.903675870100657 minutes
+2023-08-24 08:58:49,734:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:49,735:INFO:Initializing create_model()
+2023-08-24 08:58:49,735:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=lightgbm, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:49,735:INFO:Checking exceptions
+2023-08-24 08:58:49,735:INFO:Importing libraries
+2023-08-24 08:58:49,736:INFO:Copying training dataset
+2023-08-24 08:58:49,748:INFO:Defining folds
+2023-08-24 08:58:49,748:INFO:Declaring metric variables
+2023-08-24 08:58:49,749:INFO:Importing untrained model
+2023-08-24 08:58:49,750:INFO:Light Gradient Boosting Machine Imported successfully
+2023-08-24 08:58:49,752:INFO:Starting cross validation
+2023-08-24 08:58:49,758:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:54,909:INFO:Calculating mean and std
+2023-08-24 08:58:54,911:INFO:Creating metrics dataframe
+2023-08-24 08:58:55,030:INFO:Uploading results into container
+2023-08-24 08:58:55,031:INFO:Uploading model into container now
+2023-08-24 08:58:55,032:INFO:_master_model_container: 13
+2023-08-24 08:58:55,032:INFO:_display_container: 2
+2023-08-24 08:58:55,032:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=4852, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2023-08-24 08:58:55,032:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:55,232:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:55,233:INFO:Creating metrics dataframe
+2023-08-24 08:58:55,252:INFO:Initializing Dummy Classifier
+2023-08-24 08:58:55,252:INFO:Total runtime is 0.9956677516301471 minutes
+2023-08-24 08:58:55,253:INFO:SubProcess create_model() called ==================================
+2023-08-24 08:58:55,253:INFO:Initializing create_model()
+2023-08-24 08:58:55,254:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=dummy, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001DB65681B10>, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:55,254:INFO:Checking exceptions
+2023-08-24 08:58:55,254:INFO:Importing libraries
+2023-08-24 08:58:55,254:INFO:Copying training dataset
+2023-08-24 08:58:55,267:INFO:Defining folds
+2023-08-24 08:58:55,268:INFO:Declaring metric variables
+2023-08-24 08:58:55,268:INFO:Importing untrained model
+2023-08-24 08:58:55,269:INFO:Dummy Classifier Imported successfully
+2023-08-24 08:58:55,270:INFO:Starting cross validation
+2023-08-24 08:58:55,276:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-24 08:58:56,160:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-24 08:58:56,183:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-24 08:58:56,218:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-24 08:58:56,219:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-24 08:58:56,239:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-24 08:58:56,888:INFO:Calculating mean and std
+2023-08-24 08:58:56,891:INFO:Creating metrics dataframe
+2023-08-24 08:58:57,111:INFO:Uploading results into container
+2023-08-24 08:58:57,113:INFO:Uploading model into container now
+2023-08-24 08:58:57,114:INFO:_master_model_container: 14
+2023-08-24 08:58:57,115:INFO:_display_container: 2
+2023-08-24 08:58:57,115:INFO:DummyClassifier(constant=None, random_state=4852, strategy='prior')
+2023-08-24 08:58:57,115:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:57,336:INFO:SubProcess create_model() end ==================================
+2023-08-24 08:58:57,336:INFO:Creating metrics dataframe
+2023-08-24 08:58:57,360:INFO:Initializing create_model()
+2023-08-24 08:58:57,361:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>, estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=4852, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-08-24 08:58:57,361:INFO:Checking exceptions
+2023-08-24 08:58:57,363:INFO:Importing libraries
+2023-08-24 08:58:57,363:INFO:Copying training dataset
+2023-08-24 08:58:57,378:INFO:Defining folds
+2023-08-24 08:58:57,379:INFO:Declaring metric variables
+2023-08-24 08:58:57,380:INFO:Importing untrained model
+2023-08-24 08:58:57,380:INFO:Declaring custom model
+2023-08-24 08:58:57,383:INFO:Logistic Regression Imported successfully
+2023-08-24 08:58:57,389:INFO:Cross validation set to False
+2023-08-24 08:58:57,389:INFO:Fitting Model
+2023-08-24 08:58:57,898:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=4852, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-08-24 08:58:57,899:INFO:create_model() successfully completed......................................
+2023-08-24 08:58:58,189:INFO:_master_model_container: 14
+2023-08-24 08:58:58,190:INFO:_display_container: 2
+2023-08-24 08:58:58,191:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=4852, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-08-24 08:58:58,191:INFO:compare_models() successfully completed......................................
+2023-08-24 08:58:58,193:INFO:Initializing tune_model()
+2023-08-24 08:58:58,193:INFO:tune_model(estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=4852, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=None, round=4, n_iter=100, custom_grid=None, optimize=F1, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001DB620CC070>)
+2023-08-24 08:58:58,194:INFO:Checking exceptions
+2023-08-24 08:58:58,204:INFO:Copying training dataset
+2023-08-24 08:58:58,212:INFO:Checking base model
+2023-08-24 08:58:58,213:INFO:Base model : Logistic Regression
+2023-08-24 08:58:58,215:INFO:Declaring metric variables
+2023-08-24 08:58:58,216:INFO:Defining Hyperparameters
+2023-08-24 08:58:58,443:INFO:Tuning with n_jobs=-1
+2023-08-24 08:58:58,443:INFO:Initializing RandomizedSearchCV
+2023-08-24 09:04:04,783:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.70s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-08-24 09:06:26,743:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:06:26,744:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:06:26,744:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:06:26,744:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:09:40,457:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:10:48,841:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:10:48,841:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:10:48,842:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:10:48,842:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:16:23,970:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:16:23,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:16:23,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:16:23,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-24 09:25:04,068:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:25:15,625:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:26:13,425:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:26:16,577:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:26:32,541:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:26:57,164:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:29:09,705:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:30:45,454:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:30:58,571:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:31:01,502:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 09:34:44,645:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 10:35:04,010:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 10:35:23,068:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 10:35:25,720:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 10:51:53,726:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 10:51:57,048:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 10:54:22,131:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 10:54:25,093:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 10:59:45,573:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:00:16,356:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:01:06,686:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:01:38,176:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:08:34,458:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:08:36,933:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:10:57,943:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:11:00,619:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:13:10,762:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:13:13,208:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:14:57,483:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 11:15:00,023:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:04:56,636:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:39:50,558:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:39:52,720:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:40:37,029:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:42:18,864:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:42:20,941:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:42:33,996:INFO:Initializing load_model()
+2023-08-24 12:42:33,997:INFO:load_model(model_name=Model/fix_model, platform=None, authentication=None, verbose=True)
+2023-08-24 12:42:34,019:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 12:42:34,032:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator NearestNeighbors from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 12:42:34,034:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator PowerTransformer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 12:42:34,036:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 12:42:34,039:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator PCA from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 12:42:34,062:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator QuadraticDiscriminantAnalysis from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 12:42:36,719:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.4', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.3.2', 'sklearn': '1.2.1', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.13.5', 'sktime': '0.22.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '2.0.0', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.4', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.22.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2023-08-24 12:42:36,777:INFO:Initializing predict_model()
+2023-08-24 12:42:36,777:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E8A4B6BEB0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['gender', 'race/ethnicity',
+                                             'parental level of education',
+                                             'lunch', 'test preparation course',
+                                             'math score', 'reading score',
+                                             'writing score', 'total score'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImp...
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE()))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=0.95))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model', QuadraticDiscriminantAnalysis())]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E8A4B15480>)
+2023-08-24 12:42:36,778:INFO:Checking exceptions
+2023-08-24 12:51:27,914:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:51:51,780:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:53:10,526:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:53:13,470:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:54:04,852:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:54:51,871:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:54:54,207:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:56:27,474:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:56:29,765:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 12:56:58,013:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 13:02:08,986:INFO:Initializing load_model()
+2023-08-24 13:02:08,987:INFO:load_model(model_name=Model/fix_model, platform=None, authentication=None, verbose=True)
+2023-08-24 13:02:08,991:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:02:08,998:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator NearestNeighbors from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:02:09,000:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator PowerTransformer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:02:09,002:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:02:09,005:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator PCA from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:02:09,011:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator QuadraticDiscriminantAnalysis from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:02:09,017:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.4', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.3.2', 'sklearn': '1.2.1', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.13.5', 'sktime': '0.22.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '2.0.0', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.4', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.22.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2023-08-24 13:02:09,080:INFO:Initializing predict_model()
+2023-08-24 13:02:09,080:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E89CC10EB0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['gender', 'race/ethnicity',
+                                             'parental level of education',
+                                             'lunch', 'test preparation course',
+                                             'math score', 'reading score',
+                                             'writing score', 'total score'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImp...
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE()))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=0.95))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model', QuadraticDiscriminantAnalysis())]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E8A5C609D0>)
+2023-08-24 13:02:09,081:INFO:Checking exceptions
+2023-08-24 13:27:46,403:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 13:27:55,222:INFO:Initializing load_model()
+2023-08-24 13:27:55,223:INFO:load_model(model_name=Model/best_model.pkl, platform=None, authentication=None, verbose=True)
+2023-08-24 13:28:08,960:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 13:28:12,331:INFO:Initializing load_model()
+2023-08-24 13:28:12,332:INFO:load_model(model_name=Model/best_model, platform=None, authentication=None, verbose=True)
+2023-08-24 13:28:12,336:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:28:12,345:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator NearestNeighbors from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:28:12,348:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator PowerTransformer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:28:12,351:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:28:12,355:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator PCA from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:28:12,363:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator LinearDiscriminantAnalysis from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:28:12,370:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.4', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.3.2', 'sklearn': '1.2.1', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.13.5', 'sktime': '0.22.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '2.0.0', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.4', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.22.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2023-08-24 13:28:12,497:INFO:Initializing predict_model()
+2023-08-24 13:28:12,497:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E89BB3CC40>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['gender', 'race/ethnicity',
+                                             'parental level of education',
+                                             'lunch', 'test preparation course',
+                                             'math score', 'reading score',
+                                             'writing score', 'total score'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImp...
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE()))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=0.95))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model', LinearDiscriminantAnalysis())]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E8A16552D0>)
+2023-08-24 13:28:12,498:INFO:Checking exceptions
+2023-08-24 13:30:15,835:WARNING:C:\Users\Raffi\Documents\GitHub\Challenge DS Digistar\challenge_ds_digistar_class_telkom.py:90: FutureWarning:
+
+The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+
+
+2023-08-24 13:30:21,702:INFO:Initializing load_model()
+2023-08-24 13:30:21,704:INFO:load_model(model_name=Model/best_model, platform=None, authentication=None, verbose=True)
+2023-08-24 13:30:21,709:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:30:21,721:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator NearestNeighbors from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:30:21,725:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator PowerTransformer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:30:21,729:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:30:21,740:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator PCA from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:30:21,746:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator LinearDiscriminantAnalysis from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:30:21,754:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.4', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.3.2', 'sklearn': '1.2.1', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.13.5', 'sktime': '0.22.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0', 'markupsafe': '2.1.1', 'pickle5': 'Not installed', 'cloudpickle': '2.0.0', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.4', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.22.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2023-08-24 13:30:21,822:WARNING:C:\Users\Raffi\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning:
+
+Trying to unpickle estimator QuadraticDiscriminantAnalysis from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+
+
+2023-08-24 13:30:21,825:INFO:Initializing predict_model()
+2023-08-24 13:30:21,825:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E8A1B05C30>, estimator=QuadraticDiscriminantAnalysis(), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E8A4BACDC0>)
+2023-08-24 13:30:21,825:INFO:Checking exceptions
